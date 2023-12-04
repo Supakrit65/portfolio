@@ -17,21 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body
-        className={`${inter.className} bg-slate-100 text-slate-900 pt-28 sm:pt-36
-        dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
-      >
-        <div
-          className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] 
-          rounded-full blur-[10rem] sm:w-[68.75rem]
-          dark:bg-[#946263]"
-        ></div>
-        <div
-          className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] 
-        rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]
-        dark:bg-[#676394]
-        "
-        ></div>
+      <body className={`${inter.className} bg-slate-100 text-slate-900 pt-28 sm:pt-36 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}>
+        <div className="fixed top-0 left-0 w-full h-full -z-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-transparent dark:from-slate-700 dark:to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-tl from-slate-200 to-transparent dark:from-slate-900 dark:to-transparent"></div>
+        </div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
