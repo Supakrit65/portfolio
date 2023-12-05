@@ -98,7 +98,7 @@ const Intro = () => {
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full borderBlack
           outline-none hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60"
-          href={"/Resume.pdf"}
+          href={"https://portfolio-supakrit65.s3.ap-southeast-1.amazonaws.com/Resume.pdf"} target="_blank"
           download
         >
           Download Resume{" "}
